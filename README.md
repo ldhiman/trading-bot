@@ -21,9 +21,7 @@ The trading bot is implemented in Python and uses the following libraries:
 
 2. **Technical Indicators:** The script calculates various technical indicators such as moving averages, Bollinger Bands, MACD, stochastic oscillator, RSI, Aroon, Fibonacci retracement, Ichimoku cloud, volatility, and ATR.
 
-3. **Buy and Sell Logic:** The bot implements buying and selling logic based on a combination of technical indicators. It includes conditions for entering and...
-
-...exiting positions, as well as risk management strategies such as stop-loss and take-profit.
+3. **Buy and Sell Logic:** The bot implements buying and selling logic based on a combination of technical indicators. It includes conditions for entering and exiting positions, as well as risk management strategies such as stop-loss and take-profit.
 
 4. **Additional Trading Strategies:** The script includes a method for implementing additional trading strategies, allowing users to customize and extend the bot's behavior.
 
