@@ -267,7 +267,7 @@ class Trader:
             print(f"{feature}: {importance}")
 
         # Plotting feature importance
-        self.plot_feature_importance(feature_names, feature_importance)
+        #self.plot_feature_importance(feature_names, feature_importance)
 
     def plot_feature_importance(self, feature_names, feature_importance):
         plt.figure(figsize=(10, 6))
@@ -352,8 +352,10 @@ class Trader:
         trailing_stop_condition = current_price.iloc[0] < trailing_stop_price
 
          # Calculate multiple profit-taking levels
-        take_profit_prices = [current_price.iloc[0] * (1 - level * take_profit_pct / 100) for level in partial_profit_levels]
-
+        if partial_profit_levels is not None:
+            take_profit_prices = [current_price.iloc[0] * (1 - level * take_profit_pct / 100) for level in partial_profit_levels]
+        else:
+            take_profit_prices = []
 
         # Add conditions for selling with stop-loss, take-profit, and trailing stop-loss
         conditions = (
