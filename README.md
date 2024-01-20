@@ -2,6 +2,12 @@
 
 This Python script implements a simple cryptocurrency trading bot using historical price data and machine learning for price prediction. The bot is designed to make trading decisions based on technical indicators and includes features such as buying, selling, and additional trading strategies.
 
+## Result
+- **Portfolio before backtesting**: {'cash': 100, 'BTC-USD_units': 0}
+- **Portfolio after backtesting**: {'cash': 105.18469487529364, 'BTC-USD_units': 0}
+
+It makes **$5.1 Profit** in backtesting 
+
 ## Overview
 
 The trading bot is implemented in Python and uses the following libraries:
