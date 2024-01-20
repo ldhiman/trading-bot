@@ -580,7 +580,8 @@ def backtest_strategy(trader, historical_data):
 if __name__ == "__main__":
     #test_trader_functionalities()
     bitcoin_trader = Trader("BTC-USD")
-    historical_data = bitcoin_trader.bitcoin
-    backtest_strategy(bitcoin_trader, historical_data)
-    print("Backtesting completed. Portfolio after backtesting:", bitcoin_trader.portfolio)
+    bitcoin_trader.run()
+    #historical_data = bitcoin_trader.bitcoin
+    #backtest_strategy(bitcoin_trader, historical_data)
+    #print("Backtesting completed. Portfolio after backtesting:", bitcoin_trader.portfolio)
 
