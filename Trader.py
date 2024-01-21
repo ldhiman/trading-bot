@@ -579,6 +579,11 @@ def backtest_strategy(trader, historical_data):
 
 if __name__ == "__main__":
     #test_trader_functionalities()
+    stock_list = {
+        "crypto": ["BTC-INR", "ETH-INR", "XRP-INR", "LTC-INR", "BCH-INR", "ADA-INR", "DOT-INR", "BNB-INR", "LINK-INR", "XLM-INR"],
+        "US": ["GOOGL", "AAPL", "MSFT", "AMZN", "TSLA", "FB", "NFLX", "JNJ", "JPM", "V"],
+        "IN": ["RELIANCE.BO", "TCS.BO", "INFY.BO", "HDFC.BO", "ITC.BO", "SBIN.BO", "LT.BO", "HINDUNILVR.BO", "AXISBANK.BO", "BHARTIARTL.BO"]
+    }
     bitcoin_trader = Trader("BTC-USD")
     bitcoin_trader.run()
     #historical_data = bitcoin_trader.bitcoin
